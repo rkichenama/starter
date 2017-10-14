@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { render } from 'react-dom';
 
 import '../css/app.scss';
 
 import magic from '../assets/magic.gif';
 
-class Hello extends Component {
+export default class Hello extends Component {
   render() {
     return (
       <div>
@@ -16,5 +15,3 @@ class Hello extends Component {
     )
   }
 }
-
-render(<Hello/>, document.querySelector('#app'));

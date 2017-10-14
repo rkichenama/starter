@@ -10,7 +10,7 @@ const paths = {
 };
 
 module.exports = {
-  entry: path.join(paths.JS, 'app.js'),
+  entry: path.join(paths.SRC, 'index.js'),
   output: {
     path: paths.DIST,
     filename: 'app.bundle.js'
@@ -32,7 +32,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|gif)$/,
-        use: 'file-loader'
+        use: ['file-loader']
       }
     ]
   },
